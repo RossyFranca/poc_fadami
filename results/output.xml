@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-17T17:03:18.062867" rpa="false" schemaversion="5">
+<suite id="s1" name="Uitest Poc" source="C:\workspace\poc_fadami\sandbox\uitest_poc.robot">
+<test id="s1-t1" name="Cenário 01: Abrir navegador" line="7">
+<kw name="Dado que estou na tela inicial da Amazon" owner="homepage">
+<msg time="2025-04-17T17:03:18.462056" level="TRACE">Arguments: [  ]</msg>
+<kw name="Abrir navegador" owner="defaultpage">
+<msg time="2025-04-17T17:03:18.462307" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-17T17:03:18.462801" level="TRACE">Arguments: [ 'https://www.amazon.com.br/' | 'chrome' ]</msg>
+<msg time="2025-04-17T17:03:18.462897" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/'.</msg>
+<msg time="2025-04-17T17:03:18.464319" level="DEBUG">Selenium Manager binary found at: C:\Users\sirab\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe</msg>
+<msg time="2025-04-17T17:03:18.464415" level="DEBUG">Executing process: C:\Users\sirab\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --language-binding python --output json</msg>
+<msg time="2025-04-17T17:03:20.759736" level="DEBUG">Driver path: C:\Users\sirab\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe</msg>
+<msg time="2025-04-17T17:03:20.759825" level="DEBUG">Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe</msg>
+<msg time="2025-04-17T17:03:20.824845" level="DEBUG">Started executable: `C:\Users\sirab\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe` in a child process with pid: 19248 using 0 to output -3</msg>
+<msg time="2025-04-17T17:03:21.350105" level="DEBUG">POST http://localhost:58454/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': &lt;PageLoadStrategy.normal: 'normal'&gt;, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}</msg>
+<msg time="2025-04-17T17:03:21.350450" level="DEBUG">Starting new HTTP connection (1): localhost:58454</msg>
+<msg time="2025-04-17T17:03:22.102153" level="DEBUG">http://localhost:58454 "POST /session HTTP/1.1" 200 0</msg>
+<msg time="2025-04-17T17:03:22.102269" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"135.0.7049.86","chrome":{"chromedriverVersion":"135.0.7049.95 (de2eb485a1951079e63bdb57ce25544d2dc79c15-refs/branch-heads/7049@{#1836})","userDataDir":"C:\\Users\\sirab\\AppData\\Local\\Temp\\scoped_dir19248_1960024755"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:58461"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"2596cde54eedc5d2a03a9dafbc49dcb2"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-04-17T17:03:22.102347" level="DEBUG">Finished Request</msg>
+<msg time="2025-04-17T17:03:22.102462" level="DEBUG">POST http://localhost:58454/session/2596cde54eedc5d2a03a9dafbc49dcb2/timeouts {'script': 5000}</msg>
+<msg time="2025-04-17T17:03:22.103595" level="DEBUG">http://localhost:58454 "POST /session/2596cde54eedc5d2a03a9dafbc49dcb2/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2025-04-17T17:03:22.103716" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-04-17T17:03:22.103778" level="DEBUG">Finished Request</msg>
+<msg time="2025-04-17T17:03:22.103859" level="DEBUG">POST http://localhost:58454/session/2596cde54eedc5d2a03a9dafbc49dcb2/timeouts {'implicit': 0}</msg>
+<msg time="2025-04-17T17:03:22.104663" level="DEBUG">http://localhost:58454 "POST /session/2596cde54eedc5d2a03a9dafbc49dcb2/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2025-04-17T17:03:22.104746" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-04-17T17:03:22.104797" level="DEBUG">Finished Request</msg>
+<msg time="2025-04-17T17:03:22.104877" level="DEBUG">POST http://localhost:58454/session/2596cde54eedc5d2a03a9dafbc49dcb2/timeouts {'pageLoad': 300000}</msg>
+<msg time="2025-04-17T17:03:22.105603" level="DEBUG">http://localhost:58454 "POST /session/2596cde54eedc5d2a03a9dafbc49dcb2/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2025-04-17T17:03:22.105697" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-04-17T17:03:22.105753" level="DEBUG">Finished Request</msg>
+<msg time="2025-04-17T17:03:22.105837" level="DEBUG">POST http://localhost:58454/session/2596cde54eedc5d2a03a9dafbc49dcb2/url {'url': 'https://www.amazon.com.br/'}</msg>
+<msg time="2025-04-17T17:03:22.744466" level="DEBUG">http://localhost:58454 "POST /session/2596cde54eedc5d2a03a9dafbc49dcb2/url HTTP/1.1" 200 0</msg>
+<msg time="2025-04-17T17:03:22.744629" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-04-17T17:03:22.744697" level="DEBUG">Finished Request</msg>
+<msg time="2025-04-17T17:03:22.744742" level="DEBUG">Opened browser with session id 2596cde54eedc5d2a03a9dafbc49dcb2.</msg>
+<msg time="2025-04-17T17:03:22.744785" level="TRACE">Return: 1</msg>
+<arg>${url_base}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-17T17:03:18.462679" elapsed="4.282148"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2025-04-17T17:03:22.745090" level="TRACE">Arguments: [  ]</msg>
+<msg time="2025-04-17T17:03:22.745195" level="DEBUG">POST http://localhost:58454/session/2596cde54eedc5d2a03a9dafbc49dcb2/window/maximize {}</msg>
+<msg time="2025-04-17T17:03:22.772817" level="DEBUG">http://localhost:58454 "POST /session/2596cde54eedc5d2a03a9dafbc49dcb2/window/maximize HTTP/1.1" 200 0</msg>
+<msg time="2025-04-17T17:03:22.772938" level="DEBUG">Remote response: status=200 | data={"value":{"height":1048,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-04-17T17:03:22.773007" level="DEBUG">Finished Request</msg>
+<msg time="2025-04-17T17:03:22.773061" level="TRACE">Return: None</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-17T17:03:22.745016" elapsed="0.028090"/>
+</kw>
+<msg time="2025-04-17T17:03:22.773193" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-04-17T17:03:18.462202" elapsed="4.311020"/>
+</kw>
+<msg time="2025-04-17T17:03:22.773268" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-04-17T17:03:18.461921" elapsed="4.311373"/>
+</kw>
+<status status="PASS" start="2025-04-17T17:03:18.460416" elapsed="4.313164"/>
+</test>
+<status status="PASS" start="2025-04-17T17:03:18.064121" elapsed="4.710287"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Uitest Poc" id="s1" pass="1" fail="0" skip="0">Uitest Poc</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
